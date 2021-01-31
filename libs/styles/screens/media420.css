@@ -1,0 +1,85 @@
+@media only screen and (max-width: 420px) {
+    header .heading h1, form > p, form .orderAddr p, .sliderText p {
+        font-size: 3vw;
+    }
+
+    .orderDetails .orderContent {
+        flex-direction: column;
+    }
+
+    section.addOrderSlider .sliderTitle,
+    .sliderText p:nth-child(1),
+    .sliderText p > span, .sliderText button {
+        font-size: 5vw;
+    }
+.orderPayment{
+    margin-top: 3vw;
+}
+    .sliderContent > div:nth-child(2), .sliderContent > div:nth-child(3) {
+        display: none;
+    }
+
+    .sliderItem .sliderImg {
+        height: calc(100vw * 0.5);
+        margin-bottom: 2vw;
+    }
+
+    .sliderText button {
+        padding: 2vw 0;
+    }
+
+    .sliderContent > i {
+        top: 20vw;
+    }
+
+    form .orderAddr .orderAddrGroup {
+        flex-direction: column;
+    }
+
+    form .userData p, form .telCheck,
+    form .orderDate, form .paymentType p.paymentTypeTitle,
+    form input, form .orderAddr textarea,
+    section.delivery,  form .orderPayment h2 {
+        font-size: 4vw;
+    }
+
+    form .orderPayment h2, section.delivery{
+        line-height: 4.5vw;
+    }
+
+    .orderDate .orderDateTime {
+        flex-direction: column;
+    }
+
+    .orderDate .orderDateTime p:nth-child(1) {
+        margin-right: 0;
+    }
+
+    .orderContent .leftDetail, .orderContent .rightDetail,
+    .sliderContent > div, .orderAddrGroup input.str,
+    .orderAddrGroup input.house, .orderAddrGroup input.h_office,
+    form .orderPayment img, .orderDate .orderDateTime p input,
+    .orderDate .orderDateTime p, form .orderSubmit button {
+        width: 100%;
+    }
+    .footerContactItem{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footerContactItem div > p:nth-child(1){
+        font-size: 4vw;
+        line-height: 6vw;
+    }
+    .footerContactItem div > p:nth-child(2){
+        font-size: 5vw;
+        line-height: 6vw;
+
+    }
+    .footerContactItem i {
+        font-size: 7vw;
+        margin-right: 0;
+        margin-bottom: 2vw;
+    }
+
+}

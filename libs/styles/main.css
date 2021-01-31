@@ -1,0 +1,530 @@
+@font-face {
+    font-family: "CormorantReg";
+    src: url("../fonts/Cormorant_Infant/CormorantInfant-Regular.ttf")
+}
+
+@font-face {
+    font-family: 'CormorantInfant-Medium';
+    src: url('../fonts/Cormorant_Infant/CormorantInfant-Medium.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --relative: relative;
+    background: #E6E7E9;
+    --displayFlex: flex;
+    --absolute: absolute;
+    --fontReg: "CormorantReg";
+    --fontMedium: 'CormorantInfant-Medium';
+    --black: black;
+    --flexRow: row;
+    --green: #5A7421;
+    --fullWidth: 100%;
+    --fullHeight: 100%;
+}
+
+
+ul, li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+header, main, .orderDetails .orderContent, .deliveryItems, .sliderContent, form .orderAddr .orderAddrGroup,
+form .telCheck, .orderDate .orderDateTime, .orderDate .orderDateTime p, .contact, footer, .footerContactItem {
+    display: var(--displayFlex);
+}
+
+header, .sliderContent, .contact, section.contactMap .mapouter, footer {
+    position: var(--relative);
+}
+
+header img.topBack, header i.phone, .sliderContent > i, .contact > img, footer > img {
+    position: var(--absolute);
+
+}
+
+.sliderContent, .footerContactItem {
+    flex-direction: var(--flexRow);
+}
+
+header img.topBack {
+    top: 0;
+    right: 0;
+    z-index: 0;
+    width: calc(100vw * 0.414);
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+header i.phone {
+    right: 6.8vw;
+    top: 3.15vw;
+    font-size: 10vw;
+}
+
+header .heading {
+    margin: calc(100vw * 0.1083) auto auto;
+    text-align: center;
+}
+
+header .heading img.logo {
+    width: calc(100vw * 0.41);
+}
+
+header .heading h1 {
+    font-family: var(--fontReg);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.778vw;
+    line-height: 5vw;
+    text-transform: uppercase;
+}
+
+main {
+    flex-direction: column;
+}
+
+main, .sliderText button, form input, form .orderAddr textarea,
+form .orderSubmit button, footer, form .orderAddr textarea {
+    font-family: var(--fontMedium);
+
+}
+
+
+section.product h2.productName, .sliderText button {
+    color: var(--green);
+}
+
+section.product h2.productName {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4.444vw;
+    line-height: 5vw;
+    margin-top: 1.8vw;
+}
+
+.orderDetails {
+    margin-top: 1.85vw;
+}
+
+.orderDetails > p {
+    font-size: 3.704vw;
+    font-weight: 300;
+    line-height: 4.5vw;
+    padding-left: 1.4vw;
+}
+
+.orderDetails .orderContent {
+    margin-top: 1.85vw;
+    align-items: center;
+}
+
+.orderContent .leftDetail {
+    width: calc(100vw * 0.275);
+}
+
+.orderContent .leftDetail img, .sliderItem .sliderImg, .sliderItem .sliderImg > img,
+.sliderText button, form .userData input, section.contactMap .mapouter, section.contactMap .mapouter .gmap_canvas,
+.gmap_canvas > iframe , form .orderAddr textarea{
+    width: var(--fullWidth);
+}
+
+.orderContent .leftDetail img {
+    object-fit: cover;
+}
+
+.orderContent .rightDetail {
+    width: calc(100% - (100vw * 0.275));
+    padding-left: .93vw;
+}
+
+.orderContent .rightDetail ul li {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3.704vw;
+    line-height: 4vw;
+    color: #545454;
+    margin-bottom: .93vw;
+}
+
+.orderContent .rightDetail ul li span {
+    float: right;
+    color: var(--black);
+}
+
+.orderContent .rightDetail ul li span i {
+    font-weight: 200;
+}
+
+.orderContent .rightDetail ul li:nth-child(1) {
+    font-weight: 400;
+    color: var(--black);
+    margin-bottom: 1.85vw;
+}
+
+.orderContent .rightDetail ul li:last-child {
+    margin-top: 2.78vw;
+}
+
+section.delivery {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.778vw;
+    line-height: 3.33vw;
+    margin-top: 3.7vw;
+}
+
+.deliveryItems {
+    width: 50%;
+    justify-content: space-between;
+    margin-bottom: 1.852vw;
+    align-items: center;
+}
+
+section.addOrderSlider {
+    margin-top: 3.7vw;
+}
+
+section.addOrderSlider .sliderTitle {
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.7vw;
+    line-height: 4.4vw;
+}
+
+.sliderContent {
+    justify-content: space-between;
+    margin-top: 2vw;
+}
+
+.sliderContent > i {
+    font-size: 8vw;
+    top: 9vw;
+}
+
+.sliderContent > i.left {
+    left: -5vw;
+}
+
+.sliderContent > i.right {
+    right: -5vw;
+}
+
+.sliderContent > div {
+    text-align: center;
+    width: calc(100vw * 0.245);
+    text-transform: uppercase;
+}
+
+.sliderItem .sliderImg {
+    height: calc(100vw * 0.26);
+    overflow: hidden;
+    margin-bottom: .65vw;
+}
+
+.sliderItem .sliderImg > img, .contact > img, footer > img, .gmap_canvas > iframe,
+section.contactMap .mapouter .gmap_canvas {
+    height: var(--fullHeight);
+}
+
+.sliderItem .sliderImg > img {
+    object-fit: cover;
+}
+
+.sliderText p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.852vw;
+    line-height: 2.22vw;
+    margin-bottom: 1.57vw;
+}
+
+.sliderText p:nth-child(1) {
+    font-size: 2.593vw;
+    line-height: 3.15vw;
+}
+
+.sliderText p > span {
+    font-size: 3vw;
+}
+
+.sliderText button {
+    background: none;
+    border: 1px solid var(--green);
+    text-transform: uppercase;
+    font-size: 3.33vw;
+    line-height: 4.07vw;
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*****************Down arrow***************************/
+.arrowDown {
+    margin: 6.11vw 0;
+    text-align: center;
+}
+
+.arrowDown svg {
+    width: 1.48vw;
+    height: 11.01vw;
+}
+
+/*****************Form data***************************/
+form input, form .orderAddr textarea {
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    background: none;
+    color: rgba(0, 0, 0, 0.24);
+    font-size: 3.33vw;
+    padding: 2.13vw 0 2.13vw 1.94vw;
+    line-height: 4.074vw;
+}
+
+form p {
+    margin-bottom: 1.204vw;
+}
+
+form > p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.22vw;
+    line-height: 2.68vw;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.24);
+}
+
+form .userData p {
+    font-size: 2.78vw;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 3.33vw;
+}
+
+form .orderAddr p {
+    font-weight: bold;
+    font-size: 2.31vw;
+    line-height: 2.77vw;
+}
+
+form .orderAddr textarea {
+    resize: none;
+    line-height: 3.2vw;
+    height: 8.52vw;
+}
+
+.orderAddrGroup input.str {
+    width: 25.7vw;
+}
+
+.orderAddrGroup input.house {
+    width: 16.29vw;
+}
+
+.orderAddrGroup input.h_office {
+    width: 18.7vw;
+}
+
+input.str, input.house, input.h_office {
+    margin-right: 1.85vw;
+}
+
+form .telCheck {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3.33vw;
+    line-height: 4.07vw;
+
+}
+
+form .telCheck p {
+    color: rgba(0, 0, 0, 0.24);
+    margin-left: 2vw;
+}
+
+form .orderDate {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3.33vw;
+    line-height: 4.07vw;
+}
+
+.orderDate .orderDateTime, .orderDate .orderDateTime p {
+    align-items: center;
+}
+
+.orderDate .orderDateTime p:nth-child(1) {
+    margin-right: 2.77vw;
+}
+
+.orderDate .orderDateTime p input {
+    width: 23.426vw;
+    margin-right: 1.11vw;
+}
+
+.orderDate .orderDateTime p svg {
+    width: 8.61vw;
+    height: 8.61vw;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+input[type="time"]::-webkit-inner-spin-button,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+form .paymentType p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.29vw;
+    line-height: 2.685vw;
+    text-transform: uppercase;
+}
+
+form .paymentType p > i {
+    margin-right: 1vw;
+
+}
+
+form .paymentType p.paymentTypeTitle {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3.33vw;
+    line-height: 4.074vw;
+    margin-bottom: 1.94vw;
+    margin-left: 0;
+}
+
+form .orderPayment img {
+    width: 54.074vw;
+}
+
+form .orderPayment h2 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.22vw;
+    line-height: 2.685vw;
+    text-transform: uppercase;
+    margin-top: 1.66vw;
+}
+
+form .orderSubmit {
+    margin-top: 4.074vw;
+}
+
+form .orderSubmit button {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.33vw;
+    line-height: 4.074vw;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 46.574vw;
+    background: #81A459;
+    border: 1px solid #91B963;
+    height: 8.33vw;
+    cursor: pointer;
+}
+
+.contact {
+    height: 101.85vw;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.contact > img {
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+section.contactMap h2 {
+    font-weight: 600;
+    font-size: 4.63vw;
+    line-height: 5.65vw;
+    text-indent: 0.65vw;
+    text-transform: uppercase;
+    margin-bottom: 1.85vw;
+}
+
+
+section.contactMap .mapouter {
+    text-align: right;
+    height: 46.296vw;
+}
+
+section.contactMap .mapouter .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+}
+
+footer {
+    height: 48.61vw;
+    padding-bottom: 5.27vw;
+}
+
+footer > img {
+    right: 0;
+    bottom: 0;
+}
+
+section.footerContact {
+    text-transform: uppercase;
+}
+
+.footerContactItem {
+    padding-top: 7.22vw;
+    align-items: center;
+}
+
+.footerContactItem i {
+    font-size: 5vw;
+    margin-right: 1.75vw;
+}
+
+.contactTel p:nth-child(1) {
+    font-size: 2.31vw;
+    line-height: 2.77vw;
+}
+
+.contactTel p:nth-child(2) {
+    font-size: 4.53vw;
+    line-height: 5.46vw;
+}
+
+.contactGraph p:nth-child(1) {
+    font-size: 1.75vw;
+    line-height: 2.12vw;
+}
+
+.contactGraph p:nth-child(2) {
+    font-size: 3.15vw;
+    line-height: 3.79vw;
+}
+
+.socialIcons p {
+    font-size: 3.42vw;
+    line-height: 4.16vw;
+    text-indent: 0.64vw;
+}
+
+.socialIcons i {
+    margin-top: 3vw;
+    margin-right: 4.16vw;
+}
